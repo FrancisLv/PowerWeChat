@@ -500,7 +500,7 @@ func (client *BaseClient) StreamDownload(ctx context.Context, requestDownload *p
 		return 0, err
 	}
 
-	rs, err := client.HttpHelper.Df().Url(requestDownload.DownloadURL).Method(method).Json(options).Request()
+	rs, err := client.HttpHelper.Df().Url(requestDownload.DownloadURL).Method(method).Json(options).Header("Authorization", (*(*options)["headers"].(*object.HashMap))["Authorization"].(string)).Request()
 	if err != nil {
 		return 0, err
 	}
