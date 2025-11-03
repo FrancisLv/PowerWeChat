@@ -3,7 +3,7 @@ package auth
 import (
 	"errors"
 	"github.com/ArtisanCloud/PowerLibs/v3/cache"
-	"github.com/ArtisanCloud/PowerWeChat/v3/src/kernel"
+	"github.com/FrancisLv/PowerWeChat/v3/src/kernel"
 	"time"
 )
 

@@ -1,6 +1,6 @@
 package card
 
-import "github.com/ArtisanCloud/PowerWeChat/v3/src/kernel"
+import "github.com/FrancisLv/PowerWeChat/v3/src/kernel"
 
 type InvoiceClient struct {
 	*kernel.BaseClient

@@ -8,15 +8,15 @@ import (
 
 	fmt2 "github.com/ArtisanCloud/PowerLibs/v3/fmt"
 
-	"github.com/ArtisanCloud/PowerWeChat/v3/src/kernel"
-	"github.com/ArtisanCloud/PowerWeChat/v3/src/kernel/power"
-	"github.com/ArtisanCloud/PowerWeChat/v3/src/miniProgram"
-	"github.com/ArtisanCloud/PowerWeChat/v3/src/officialAccount"
-	"github.com/ArtisanCloud/PowerWeChat/v3/src/officialAccount/templateMessage/request"
-	"github.com/ArtisanCloud/PowerWeChat/v3/src/openPlatform"
-	"github.com/ArtisanCloud/PowerWeChat/v3/src/openWork"
-	"github.com/ArtisanCloud/PowerWeChat/v3/src/payment"
-	"github.com/ArtisanCloud/PowerWeChat/v3/src/work"
+	"github.com/FrancisLv/PowerWeChat/v3/src/kernel"
+	"github.com/FrancisLv/PowerWeChat/v3/src/kernel/power"
+	"github.com/FrancisLv/PowerWeChat/v3/src/miniProgram"
+	"github.com/FrancisLv/PowerWeChat/v3/src/officialAccount"
+	"github.com/FrancisLv/PowerWeChat/v3/src/officialAccount/templateMessage/request"
+	"github.com/FrancisLv/PowerWeChat/v3/src/openPlatform"
+	"github.com/FrancisLv/PowerWeChat/v3/src/openWork"
+	"github.com/FrancisLv/PowerWeChat/v3/src/payment"
+	"github.com/FrancisLv/PowerWeChat/v3/src/work"
 )
 
 func GetOfficialConfig() *officialAccount.UserConfig {

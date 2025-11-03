@@ -4,7 +4,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/ArtisanCloud/PowerWeChat/v3/src/kernel/power"
+	"github.com/FrancisLv/PowerWeChat/v3/src/kernel/power"
 )
 
 func Test_Message_Send_Text(t *testing.T) {

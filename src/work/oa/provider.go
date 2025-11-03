@@ -1,18 +1,18 @@
 package oa
 
 import (
-	"github.com/ArtisanCloud/PowerWeChat/v3/src/kernel"
-	"github.com/ArtisanCloud/PowerWeChat/v3/src/work/oa/approval"
-	"github.com/ArtisanCloud/PowerWeChat/v3/src/work/oa/calendar"
-	"github.com/ArtisanCloud/PowerWeChat/v3/src/work/oa/dial"
-	"github.com/ArtisanCloud/PowerWeChat/v3/src/work/oa/journal"
-	"github.com/ArtisanCloud/PowerWeChat/v3/src/work/oa/living"
-	"github.com/ArtisanCloud/PowerWeChat/v3/src/work/oa/meeting"
-	"github.com/ArtisanCloud/PowerWeChat/v3/src/work/oa/meetingroom"
-	"github.com/ArtisanCloud/PowerWeChat/v3/src/work/oa/pstncc"
-	"github.com/ArtisanCloud/PowerWeChat/v3/src/work/oa/schedule"
-	"github.com/ArtisanCloud/PowerWeChat/v3/src/work/oa/wedoc"
-	"github.com/ArtisanCloud/PowerWeChat/v3/src/work/oa/wedrive"
+	"github.com/FrancisLv/PowerWeChat/v3/src/kernel"
+	"github.com/FrancisLv/PowerWeChat/v3/src/work/oa/approval"
+	"github.com/FrancisLv/PowerWeChat/v3/src/work/oa/calendar"
+	"github.com/FrancisLv/PowerWeChat/v3/src/work/oa/dial"
+	"github.com/FrancisLv/PowerWeChat/v3/src/work/oa/journal"
+	"github.com/FrancisLv/PowerWeChat/v3/src/work/oa/living"
+	"github.com/FrancisLv/PowerWeChat/v3/src/work/oa/meeting"
+	"github.com/FrancisLv/PowerWeChat/v3/src/work/oa/meetingroom"
+	"github.com/FrancisLv/PowerWeChat/v3/src/work/oa/pstncc"
+	"github.com/FrancisLv/PowerWeChat/v3/src/work/oa/schedule"
+	"github.com/FrancisLv/PowerWeChat/v3/src/work/oa/wedoc"
+	"github.com/FrancisLv/PowerWeChat/v3/src/work/oa/wedrive"
 )
 
 func RegisterProvider(app kernel.ApplicationInterface) (*Client,

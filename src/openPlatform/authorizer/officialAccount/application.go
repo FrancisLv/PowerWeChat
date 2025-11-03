@@ -1,11 +1,11 @@
 package officialAccount
 
 import (
-	"github.com/ArtisanCloud/PowerWeChat/v3/src/kernel"
-	"github.com/ArtisanCloud/PowerWeChat/v3/src/kernel/providers"
-	"github.com/ArtisanCloud/PowerWeChat/v3/src/officialAccount"
-	"github.com/ArtisanCloud/PowerWeChat/v3/src/openPlatform/authorizer/officialAccount/account"
-	"github.com/ArtisanCloud/PowerWeChat/v3/src/openPlatform/authorizer/officialAccount/miniProgram"
+	"github.com/FrancisLv/PowerWeChat/v3/src/kernel"
+	"github.com/FrancisLv/PowerWeChat/v3/src/kernel/providers"
+	"github.com/FrancisLv/PowerWeChat/v3/src/officialAccount"
+	"github.com/FrancisLv/PowerWeChat/v3/src/openPlatform/authorizer/officialAccount/account"
+	"github.com/FrancisLv/PowerWeChat/v3/src/openPlatform/authorizer/officialAccount/miniProgram"
 )
 
 type Application struct {

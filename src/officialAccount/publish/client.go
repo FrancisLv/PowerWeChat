@@ -3,10 +3,10 @@ package publish
 import (
 	"context"
 	"github.com/ArtisanCloud/PowerLibs/v3/object"
-	"github.com/ArtisanCloud/PowerWeChat/v3/src/kernel"
-	response2 "github.com/ArtisanCloud/PowerWeChat/v3/src/kernel/response"
-	"github.com/ArtisanCloud/PowerWeChat/v3/src/officialAccount/publish/request"
-	"github.com/ArtisanCloud/PowerWeChat/v3/src/officialAccount/publish/response"
+	"github.com/FrancisLv/PowerWeChat/v3/src/kernel"
+	response2 "github.com/FrancisLv/PowerWeChat/v3/src/kernel/response"
+	"github.com/FrancisLv/PowerWeChat/v3/src/officialAccount/publish/request"
+	"github.com/FrancisLv/PowerWeChat/v3/src/officialAccount/publish/response"
 )
 
 type Client struct {

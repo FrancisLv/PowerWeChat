@@ -1,8 +1,8 @@
 package response
 
 import (
-	"github.com/ArtisanCloud/PowerWeChat/v3/src/kernel/response"
-	"github.com/ArtisanCloud/PowerWeChat/v3/src/openWork/license/model"
+	"github.com/FrancisLv/PowerWeChat/v3/src/kernel/response"
+	"github.com/FrancisLv/PowerWeChat/v3/src/openWork/license/model"
 )
 
 type ResponseListOrder struct {

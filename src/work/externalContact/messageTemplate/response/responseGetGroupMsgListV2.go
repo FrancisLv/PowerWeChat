@@ -1,8 +1,8 @@
 package response
 
 import (
-	"github.com/ArtisanCloud/PowerWeChat/v3/src/kernel/response"
-	"github.com/ArtisanCloud/PowerWeChat/v3/src/work/externalContact/messageTemplate/request"
+	"github.com/FrancisLv/PowerWeChat/v3/src/kernel/response"
+	"github.com/FrancisLv/PowerWeChat/v3/src/work/externalContact/messageTemplate/request"
 )
 
 type GroupMsg struct {

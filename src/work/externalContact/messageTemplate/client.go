@@ -5,10 +5,10 @@ import (
 	"errors"
 	"fmt"
 	"github.com/ArtisanCloud/PowerLibs/v3/object"
-	"github.com/ArtisanCloud/PowerWeChat/v3/src/kernel"
-	response2 "github.com/ArtisanCloud/PowerWeChat/v3/src/kernel/response"
-	"github.com/ArtisanCloud/PowerWeChat/v3/src/work/externalContact/messageTemplate/request"
-	"github.com/ArtisanCloud/PowerWeChat/v3/src/work/externalContact/messageTemplate/response"
+	"github.com/FrancisLv/PowerWeChat/v3/src/kernel"
+	response2 "github.com/FrancisLv/PowerWeChat/v3/src/kernel/response"
+	"github.com/FrancisLv/PowerWeChat/v3/src/work/externalContact/messageTemplate/request"
+	"github.com/FrancisLv/PowerWeChat/v3/src/work/externalContact/messageTemplate/response"
 	"reflect"
 )
 

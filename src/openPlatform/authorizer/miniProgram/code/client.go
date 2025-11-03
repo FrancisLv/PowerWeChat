@@ -3,11 +3,11 @@ package code
 import (
 	"context"
 	"github.com/ArtisanCloud/PowerLibs/v3/object"
-	"github.com/ArtisanCloud/PowerWeChat/v3/src/kernel"
-	response2 "github.com/ArtisanCloud/PowerWeChat/v3/src/kernel/response"
-	"github.com/ArtisanCloud/PowerWeChat/v3/src/openPlatform/authorizer/miniProgram/code/request"
-	"github.com/ArtisanCloud/PowerWeChat/v3/src/openPlatform/authorizer/miniProgram/code/response"
-	response4 "github.com/ArtisanCloud/PowerWeChat/v3/src/work/media/response"
+	"github.com/FrancisLv/PowerWeChat/v3/src/kernel"
+	response2 "github.com/FrancisLv/PowerWeChat/v3/src/kernel/response"
+	"github.com/FrancisLv/PowerWeChat/v3/src/openPlatform/authorizer/miniProgram/code/request"
+	"github.com/FrancisLv/PowerWeChat/v3/src/openPlatform/authorizer/miniProgram/code/response"
+	response4 "github.com/FrancisLv/PowerWeChat/v3/src/work/media/response"
 	"net/http"
 )
 
