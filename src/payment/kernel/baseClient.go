@@ -21,7 +21,9 @@ import (
 	"io"
 	"log"
 	"net/http"
+	"net/url"
 	"os"
+	"strings"
 )
 
 type BaseClient struct {
@@ -485,6 +487,26 @@ func (client *BaseClient) HttpUploadJson(ctx context.Context, url string, files 
 
 }
 
+// RemoveDomain 从URL中去除域名，返回路径和查询参数部分
+func RemoveDomain(rawURL string) (string, error) {
+	// 清理URL字符串（去除换行符和首尾空格）
+	cleanedURL := strings.TrimSpace(rawURL)
+
+	// 解析URL
+	parsedURL, err := url.Parse(cleanedURL)
+	if err != nil {
+		return "", fmt.Errorf("解析URL失败: %v", err)
+	}
+
+	// 组合路径和查询参数
+	result := parsedURL.Path
+	if parsedURL.RawQuery != "" {
+		result += "?" + parsedURL.RawQuery
+	}
+
+	return result, nil
+}
+
 func (client *BaseClient) StreamDownload(ctx context.Context, requestDownload *power.RequestDownload, filePath string) (int64, error) {
 	fileHandler, err := os.Create(filePath)
 	if err != nil {
@@ -495,7 +517,16 @@ func (client *BaseClient) StreamDownload(ctx context.Context, requestDownload *p
 	config := client.App.GetConfig()
 
 	method := http.MethodGet
-	options, err := client.AuthSignRequest(ctx, config, requestDownload.DownloadURL, method, nil, &object.HashMap{})
+
+	pathWithQuery, err := RemoveDomain(requestDownload.DownloadURL)
+	if err != nil {
+		fmt.Printf("去除域名出错: %v\n", err)
+		return 0, err
+	}
+
+	fmt.Println("pathWithQuery: ", pathWithQuery)
+
+	options, err := client.AuthSignRequest(ctx, config, pathWithQuery, method, nil, &object.HashMap{})
 	if err != nil {
 		return 0, err
 	}
